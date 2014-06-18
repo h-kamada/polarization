@@ -1,0 +1,15 @@
+<package>
+  <description brief="image_create">
+
+     image_create
+
+  </description>
+  <author>h-kamada</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/image_create</url>
+
+  <depend package="jsk_perception"/>
+</package>
+
+
