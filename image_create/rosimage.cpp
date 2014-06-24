@@ -36,10 +36,18 @@ public:
     //    image_pub = nh_.advertise<sensor_msgs::Image>("chatter", 1000);
     //parameters
     bl=false;
-    namedWindow("image1", CV_WINDOW_AUTOSIZE|CV_WINDOW_FREERATIO);
-    namedWindow("image2", CV_WINDOW_AUTOSIZE|CV_WINDOW_FREERATIO);
-    namedWindow("result1", CV_WINDOW_AUTOSIZE|CV_WINDOW_FREERATIO);
-    namedWindow("result2", CV_WINDOW_AUTOSIZE|CV_WINDOW_FREERATIO);
+    // namedWindow("image1", CV_WINDOW_AUTOSIZE|CV_WINDOW_FREERATIO);
+    // namedWindow("image2", CV_WINDOW_AUTOSIZE|CV_WINDOW_FREERATIO);
+    // namedWindow("result1", CV_WINDOW_AUTOSIZE|CV_WINDOW_FREERATIO);
+    // namedWindow("result2", CV_WINDOW_AUTOSIZE|CV_WINDOW_FREERATIO);
+    namedWindow("image1");
+    namedWindow("image2");
+    namedWindow("result1");
+    namedWindow("result2");
+    resizeWindow("image1", 50,50);
+    resizeWindow("image2", 50,50);
+    resizeWindow("result1", 50,50);
+    resizeWindow("result2", 50,50);
   }
   ~create_image(){
     destroyWindow("image1");
